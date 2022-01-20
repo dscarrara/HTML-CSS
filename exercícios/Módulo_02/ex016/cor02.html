@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * {/* Cofiguração Global em CSS */
+            height: 100%;
+        }
+        /* Gradiente linear --> linear-gradiente(): direita (to right, cores), esquerda (to left, cores) cima (to top, cores), baixo (to bottom, cores)
+        Em angulo: positivo (45deg, cores), negativo (-45deg, cores)
+        
+        Gradiente circular --> radial-gradiente(): (circle, cores) 
+        
+        É possível também definir a porcentagem de cada cor para o gradiente.
+        Basta colocar a porcentagem depois da cor sem vírgola.
+        Ex: #6959C9 20%,
+        */
+        body {
+            background-image: linear-gradient(to right, #6956C9, #A23EB8 30%, #D6398A, #E3435F, #FEC35F 80%); /*Quantas cores quiser na porcentagem que preferir*/
+            background-attachment: fixed; /*Fundo fixo*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

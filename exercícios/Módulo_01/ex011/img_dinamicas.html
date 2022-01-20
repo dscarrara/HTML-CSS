@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <!--A ordem das imagens deve ser obedecida. Do menor para o maior ou vice versa-->
+        <source media="(max-width: 700px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">   
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML 5</p>
+    
+    <audio src="midia/happy-mistake.mp3" controls></audio>
+    <!--Formatos disponíveis (mp3, wav, OGG)-->
+    
+    <audio preload="metadata" controls>
+        <source src="midia/Nothing Else Matters.mp3" type="audio/mpeg">
+        <source src="midia/Nothing Else Matters.wav" type="audio/wav">
+        <source src="midia/Nothing Else Matters.ogg" type="audio/ogg"> 
+        <!--type="audio/mpeg (para mp3) - "type="audio/wav" (para .wav) - type="audio/ogg" (para .ogg)-->
+        <p>Infelismente seu navegador não consegue reproduzir audio. <a href="midia/Nothing Else Matters.mp3">Clique aqui para baicar o arquivo</a> </p>
+    </audio>
+</body>
+</html>
