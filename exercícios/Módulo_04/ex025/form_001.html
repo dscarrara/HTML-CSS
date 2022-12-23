@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+<!--
+    <form>
+        - action envia os dados para um arquivo php
+        - method:
+
+            get - metodo padrão onde os dados aparecem na url
+                - Nao pode ultrapassar 3 mil bits para poder ser enviado = 3 mil letras
+                - Não recomendado para dados sensíveis (senhas)
+                - Não faz evio de arquivos (ex: fotos)
+
+            post - os dados não aparecem na url mas podem ser consultados na área inspessão do navagedor. (não estão criptografados)
+                 - Recomendado para dados sensíveis (senhas)
+                 - Para proteção de dados udar https (estudos avançados)
+                 - Para dados com mais de 3 mil bits = 3 mil letras
+                 - Para envio de arquivos (ex: fotos)
+
+        - autocomplete liga ou desliga a caixa de preenchimento automático
+    
+    <label> 
+        - Usado para relacionar um texto a uma caixa de input - No campo for do label usar o id da tag input)
+
+    <input>
+        - Existem diversos tipos de input no html 5
+        - name usado para php
+        - id usado por japascript e label
+-->
